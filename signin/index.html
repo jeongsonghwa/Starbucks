@@ -28,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signin.css">
  
     <script defer src="../JS/common.js"></script>
 </head>
@@ -40,7 +41,6 @@
             <a href="/" class="logo">
                 <img src="../images/starbucks_logo.png" alt="STARBUCKS" />
             </a>
-
 
             <div class="sub-menu">
                 <ul class="menu">
@@ -371,10 +371,30 @@
                 </li>
             </ul>
         </div>
+     </header>
 
- <section class="signin">
-
- </section>
+    <section class="signin">
+        <h1>로그인</h1>
+        <div class="signin__card">
+            <h2>
+               <strong> Welcome! </strong>스타벅스에 오신 것을 환영합니다.
+            </h2>
+            <form>
+                <input type="text" placeholder="아이디를 입력하세요" />
+                <input type="password" placeholder="비밀번호를 입력하세요" />
+                <input type="submit" value="로그인" />
+                <p>
+                    * 비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br/>
+                    정기적으로 비밀번호를 변경하세요!
+                </p>
+            </form>
+            <div class="actions">
+                <a href = "javascript:void(0)">회원가입</a>"
+                <a href = "javascript:void(0)">아이디 찾기</a>"
+                <a href = "javascript:void(0)">비밀번호 찾기</a>"
+            </div>
+        </div>
+    </section>
 
   <!-- FOOTER -->
 
@@ -406,8 +426,6 @@
       <p class="copyright">
           &copy; <span class="this-year"></span> Starbucks Coffee Company. All Rights Reserved.
       </p>
-      <img src="../images/starbucks_logo_only_text.png" alt ="" class="logo" />
-    </div>
 </footer>
 
 
@@ -418,4 +436,5 @@
 
 <!-- 지운것 : footer -> visual까지 , to-top클래스 삭제, badges 클래스 ,main.js빼고 모든 js 삭제 -->
 <!-- signin파일로 왔으니까 해당경로 찾아주기 : 사용하는 모든 경로를 현재 경로에 맞게 수정하기 : ctrl + h(./ -> ../)-->
-<!-- js common 내용 정리하고 기존 html에 js common 연결 -->
+<!-- js common 내용 정리하고 기존 html에 js common 연결 signin에도 정리-->
+<!-- css common 내용 정리하고 기존 html에 css common 연결 signin에도 정리-->
